@@ -12,4 +12,3 @@ function updateFooterContent() {
 }
 
 updateFooterContent();
-lastModified.innerHTML = `Last Update: ${document.lastModified}`;
