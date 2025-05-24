@@ -190,7 +190,7 @@ nav a {
 
 .complete{
     background-color: #8FBC8F;
-    color: white;
+    color: black;
 }
 
 .complete p::before {
