@@ -1,0 +1,38 @@
+{
+    "familyName": "Alvarado",
+    "moveDate": "06-13-2025",
+    "numberFamilyMembers": 6,
+    "visitedByBishopric": true,
+    "familyMembers": [
+        {
+            "name": "Wilfredo",
+            "gender": "Male",
+            "birthdate": "01-20-1964"
+        },
+        {
+            "name": "Araceli",
+            "gender": "Female",
+            "birthdate": "03-11-1974"
+        },
+        {
+            "name": "Isaac",
+            "gender": "Male",
+            "birthdate": "09-11-1992"
+        },
+        {
+            "name": "Lionel",
+            "gender": "Male",
+            "birthdate": "06-01-1994"
+        },
+        {
+            "name": "Abel",
+            "gender": "Male",
+            "birthdate": "01-27-1996"
+        },
+        {
+            "name": "Jairo",
+            "gender": "Male",
+            "birthdate": "10-02-1998"
+        }
+    ]
+}
