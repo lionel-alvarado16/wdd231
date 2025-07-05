@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 – Web Frontend Development I - Lionel Alvarado</title>
+    <meta name="author" content="Lionel Alvarado">
+    <meta name="description" content="WDD 231 - Web Fronted Development I - Lionel A. Alvarado - This home page includes information about me and my first certificate courses">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400..800&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/array.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="name">
+            <img src="images/home-icon.png" alt="My photo">
+            <span>Lionel A. Alvarado</span>
+        </div>
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="#" title="Chamber">Chamber</a></li>
+                <li><a href="#" title="Final-Project">Final</a></li>
+                <!-- <li><a href="https://github.com/lionel-alvarado16" title="GitHub">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/lionel-alvarado-anastacio/" title="LinkedIn">LinkedIn</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <main class="home-grid">
+        <h1>Home</h1>
+        <section class="card one">
+            <h2>About Me</h2>
+            <div>
+                <p>My name is Lionel Alvarado and I'm from Peru. My first degree was Mechanical Engineering, but I've always been attracted
+                to technology, so I'm currently persuing a Bachelor's degree in Software Development. I love my family and I'm really
+                happy when I spend time with them. I like listening to music and playing the guitar.</p>
+            </div>
+        </section>
+        <section class="card two">
+            <h2>My Photo</h2>
+            <div>
+                <figure>
+                    <img src="images/myphoto.jpg" alt="Costa Verde, Lima" width="100">
+                </figure>
+            </div>
+        </section>
+        <section class="card three">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filters">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div class="courses-container">
+
+            </div>
+        </section>
+        <div class="social">
+                <a href="https://www.linkedin.com/in/lionel-alvarado-anastacio" target="blank">
+                    <img src="images/linkedin-logo.png" alt="linkedin icon" loading="lazy">
+                </a>
+                <a href="https://github.com/lionel-alvarado16" target="_blank">
+                    <img src="images/github.svg" width="55" height="55" alt="github icon" loading="lazy">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter-logo.png" alt="twitter icon" loading="lazy">
+                </a>
+        </div>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span></p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,69 @@
+@media screen and (min-width: 37.5em) {
+    .name {
+        gap: 40px;
+        font-size: 2.5rem;
+        justify-content: center;
+    }
+
+    .name img {
+        margin: 15px 0;
+    }
+
+    .navigation, nav a {
+        display: flex;
+    }
+
+    #menu {
+        display: none;
+    }
+    
+    .navigation {
+        flex-direction: row;
+    }
+    
+    .home-grid {
+        padding: 0 2rem;
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        column-gap: 20px;
+        row-gap: 0;
+    }
+
+    .one {
+        grid-column: 1/7;
+    }
+    
+    .two {
+        grid-column: 7/10;
+        margin-top: 0;
+    }
+    
+    .three {
+        grid-column: 1/10;
+        margin-top: 20px;
+    }
+
+    .courses-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    .courses-container p {
+        grid-column: 1/4;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin: 10px auto;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .social {
+        grid-column: 1/10;
+    }
+}

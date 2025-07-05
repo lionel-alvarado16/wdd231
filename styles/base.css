@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+header {
+    justify-content: center;
+    background-color: #1B4965;
+    color: white;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    font-family: "Baloo Bhaina 2", sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+    height: 130px;
+}
+
+.name img {
+    margin: 15px 15px;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+.name, .navigation li, button {
+    flex: 1 1 auto;
+    width: 100%;
+}
+
+#menu {
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    border: 0;
+    background: 0;
+    color: #fff;
+    position: absolute;
+    right: 1rem;
+    top: 2.7rem;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.show::before {
+    content: "x";
+}
+
+.show a {
+    display: block;
+}
+
+nav a {
+    display: none;
+    color: #fff;
+    padding: 0.6rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Baloo Bhaina 2", sans-serif;
+    font-weight: 400;
+    font-size: 1.60rem;
+    height: 100%;
+}
+
+.navigation a:hover {
+    background-color: #BEE9E8;
+    color: black;
+    font-weight: 700;
+}
+
+.home-grid {
+    padding: 0 20px;
+    display: grid;
+}
+
+.home-grid h1 {
+    color: #1B4965;
+}
+
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.two, .three {
+    margin-top: 20px;
+}
+
+.two img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.two figcaption {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+.card h2 {
+    background-color: #1B4965;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.one div {
+    padding: 20px 40px;
+    line-height: 2;
+}
+
+.two div {
+    padding: 20px;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 10px;
+    max-width: 80vh;
+    margin: 0 auto;
+}
+
+.filters button {
+    background-color: black;
+    color: white;
+    font-family: "Baloo Bhaina 2", sans-serif;
+    font-size: 1.20rem;
+    width: 100%;
+    padding: 10px;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.filters button:hover {
+    background-color: #BEE9E8;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.credits {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.courses-container {
+    border-top: 2px solid rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    display: grid;
+    row-gap: 20px;
+}
+
+.course {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #9c2c13;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 15px;
+    text-align: center;
+}
+
+.complete{
+    background-color: #8FBC8F;
+    color: black;
+}
+
+.complete p::before {
+    content: "✓ ";
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 20px;
+}
+
+.social a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #1B4965;
+    color: white;
+    font-family: "Baloo Bhaina 2", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px;
+}
