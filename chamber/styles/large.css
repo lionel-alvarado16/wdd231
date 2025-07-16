@@ -1,0 +1,36 @@
+@media only screen and (min-width: 38rem) {
+    header {
+        padding: 1rem 4.5rem;
+    }
+
+    #hamButton {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        background-color: #FDF0D5;
+        padding-right: 4.5rem;
+    }
+
+    ul.menuLinks li a {
+        color: #003049;
+    }
+
+    ul.menuLinks, ul.menuLinks.open {
+        display: flex;
+        flex: 1;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .nav-box {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
