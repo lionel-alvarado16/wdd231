@@ -25,7 +25,7 @@ const displayCompanies = (companies) => {
         let logo = document.createElement('img');
         let address = document.createElement('p');
         let phone = document.createElement('p');
-        let website = document.createElement('p');
+        let website = document.createElement('a');
 
         logo.setAttribute('src', company.image);
         logo.setAttribute('alt', `Image of ${company.name}`);
@@ -34,6 +34,9 @@ const displayCompanies = (companies) => {
         
         address.innerHTML = `${company.address}`;
         phone.innerHTML = `${company.phoneNumber}`;
+
+        website.setAttribute('href', company.websiteurl);
+        website.setAttribute('target', '_blank');
         website.innerHTML = `${company.websiteurl}`;
 
         card.appendChild(logo);
