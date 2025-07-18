@@ -120,6 +120,11 @@ main {
     margin: 20px;
 }
 
+main h1 {
+    text-align: center;
+    color: #003049;
+}
+
 section {
     background-color: #eee;
     padding: 20px;
@@ -136,7 +141,7 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 1rem;
 
-    .name {
+    .cname {
         display: none;
     }
 }

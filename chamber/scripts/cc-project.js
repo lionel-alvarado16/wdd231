@@ -29,7 +29,7 @@ const displayCompanies = (companies) => {
         let website = document.createElement('a');
 
         name.innerHTML = `${company.name}`;
-        name.setAttribute('class', 'name');
+        name.setAttribute('class', 'cname');
 
         logo.setAttribute('src', company.image);
         logo.setAttribute('alt', `Image of ${company.name}`);
