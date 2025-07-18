@@ -3,7 +3,7 @@
         {
             "name": "Delicias Andinas",
             "address": "123 Central Ave, Comas, Lima 15326",
-            "phoneNumber": "+51 1 4267890",
+            "phoneNumber": "+51 (01) 426-7890",
             "websiteurl": "https://deliciasandinas.pe",
             "image": "images/delicias-andinas-logo.png",
             "membershipLevel": 3,
@@ -12,7 +12,7 @@
         {
             "name": "EcoVida Market",
             "address": "456 Los Pinos St, Comas, Lima 15325",
-            "phoneNumber": "+51 1 4823674",
+            "phoneNumber": "+51 (01) 482-3674",
             "websiteurl": "https://ecovidamarket.com",
             "image": "images/ecovida-logo.png",
             "membershipLevel": 2,
@@ -21,7 +21,7 @@
         {
             "name": "SolTech Solutions",
             "address": "789 Sol St, Comas, Lima 15324",
-            "phoneNumber": "+51 1 4897310",
+            "phoneNumber": "+51 (01) 489-7310",
             "websiteurl": "https://soltechsolutions.pe",
             "image": "images/soltech-logo.png",
             "membershipLevel": 3,
@@ -30,7 +30,7 @@
         {
             "name": "Flora & Fauna",
             "address": "1550 La Marina Ave, Comas, Lima 15326",
-            "phoneNumber": "+51 1 4250983",
+            "phoneNumber": "+51 (01) 425-0983",
             "websiteurl": "https://florayfauna.pe",
             "image": "images/flora-and-fauna-logo.png",
             "membershipLevel": 1,
@@ -39,7 +39,7 @@
         {
             "name": "MoviFit Gym",
             "address": "234 Las Palmeras St, Comas, Lima 15325",
-            "phoneNumber": "+51 1 4367812",
+            "phoneNumber": "+51 (01) 436-7812",
             "websiteurl": "https://movifitgym.com",
             "image": "images/movifit-logo.png",
             "membershipLevel": 2,
@@ -48,7 +48,7 @@
         {
             "name": "Peru Artisanal",
             "address": "112 Artisans St, Comas, Lima 15324",
-            "phoneNumber": "+51 1 4812209",
+            "phoneNumber": "+51 (01) 481-2209",
             "websiteurl": "https://peruartisanal.pe",
             "image": "images/peru-artisanal-logo.png",
             "membershipLevel": 3,
@@ -57,7 +57,7 @@
         {
             "name": "Northern Flavors",
             "address": "202 Grau Ave, Comas, Lima 15326",
-            "phoneNumber": "+51 1 4678901",
+            "phoneNumber": "+51 (01) 467-8901",
             "websiteurl": "https://northernflavors.pe",
             "image": "images/northern-flavors-logo.png",
             "membershipLevel": 1,
@@ -66,7 +66,7 @@
         {
             "name": "Inkavista Tours",
             "address": "303 Arequipa St, Comas, Lima 15325",
-            "phoneNumber": "+51 1 4783210",
+            "phoneNumber": "+51 (01) 478-3210",
             "websiteurl": "https://inkavistatours.com",
             "image": "images/inkavista-logo.png",
             "membershipLevel": 3,
@@ -75,7 +75,7 @@
         {
             "name": "TechnoNet",
             "address": "500 Bolívar Ave, Comas, Lima 15324",
-            "phoneNumber": "+51 1 4836572",
+            "phoneNumber": "+51 (01) 483-6572",
             "websiteurl": "https://technonet.pe",
             "image": "images/technonet-logo.png",
             "membershipLevel": 2,
