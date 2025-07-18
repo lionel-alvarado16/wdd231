@@ -38,6 +38,16 @@
     /* Directory page style*/
     main {
         max-width: 1200px;
-        margin: 20px auto;
+        margin: 30px auto;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+
+        section {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr 1fr;
+        }
     }
 }

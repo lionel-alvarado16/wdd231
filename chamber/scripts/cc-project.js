@@ -22,10 +22,14 @@ const displayCompanies = (companies) => {
     companies.forEach((company) => {
         // Create elemets to add to the div cards element
         let card = document.createElement('section');
+        let name = document.createElement('p');
         let logo = document.createElement('img');
         let address = document.createElement('p');
         let phone = document.createElement('p');
         let website = document.createElement('a');
+
+        name.innerHTML = `${company.name}`;
+        name.setAttribute('class', 'name');
 
         logo.setAttribute('src', company.image);
         logo.setAttribute('alt', `Image of ${company.name}`);
@@ -39,6 +43,7 @@ const displayCompanies = (companies) => {
         website.setAttribute('target', '_blank');
         website.innerHTML = `${company.websiteurl}`;
 
+        card.appendChild(name);
         card.appendChild(logo);
         card.appendChild(address);
         card.appendChild(phone);
@@ -49,3 +54,18 @@ const displayCompanies = (companies) => {
 }
 
 getCompanyData();
+
+// User layout view selection
+const gridButton = document.querySelector('#grid');
+const listButton = document.querySelector('#list');
+const display = document.querySelector('#cards');
+
+gridButton.addEventListener("click", () => {
+    display.classList.add("grid");
+    display.classList.remove("list");
+});
+
+listButton.addEventListener("click", () => {
+    display.classList.add("list");
+    display.classList.remove("grid");
+});

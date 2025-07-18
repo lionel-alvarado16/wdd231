@@ -116,13 +116,6 @@ footer p {
 }
 
 /* Directory page style*/
-
-#cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1rem;
-}
-
 main {
     margin: 20px;
 }
@@ -138,6 +131,16 @@ section {
     align-items: center;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+
+    .name {
+        display: none;
+    }
+}
+
 section img {
     margin-bottom: .5rem;
 }
@@ -149,3 +152,44 @@ section img {
 #cards a {
     margin-top: .5rem;
 }
+
+.list {
+    display: flex;
+    flex-direction: column;
+
+    section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        margin: 0;
+        padding: 0.5rem;
+        padding-bottom: 1rem;
+        border: none;
+        box-shadow: none;
+
+        & > * {
+            margin: 0 1rem;
+        }
+
+        img {
+            display: none;
+        }
+
+        &:nth-child(even) {
+			background-color: rgb(102, 155, 188, 0.3);
+		}
+    }
+}
+
+.menu {
+    margin: 1rem auto;
+    padding: 0.5rem;
+    background-color: #003049;
+    text-align: center;
+
+    button {
+        padding: 0.5rem 1rem;
+        font-weight: 700;
+        cursor: pointer;
+    }
+}
+
