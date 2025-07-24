@@ -1,0 +1,25 @@
+main {
+    border: 1px solid #5d6f67;
+    background-color: #f6f0da;
+    border-radius: 10px;
+    text-align: center;
+}
+
+main p {
+    color: #3a5250;
+    margin: .3rem 0;
+}
+
+main figcaption {
+    text-transform: capitalize;
+    color: #3a5250;
+    margin: .3rem 0;
+}
+
+main p span {
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 20px;
+}
