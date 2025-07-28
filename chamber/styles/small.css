@@ -115,7 +115,7 @@ footer p {
 }
 
 /* Directory page style*/
-main {
+main.directory {
     margin: 20px;
 }
 
@@ -195,4 +195,39 @@ section img {
     padding: 0.5rem 1rem;
     font-weight: 700;
     cursor: pointer;
+}
+
+/* Home Page Styles */
+
+#hero-img {
+    width: 100%;
+}
+
+.join {
+    position: absolute;
+    top: 240px;
+    right: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid #FDF0D5;
+    background-color: #003049;
+    color: #fff;
+    text-decoration: none;
+}
+
+.join:hover {
+    background-color: #669BBC;
+    color: #000;
+}
+
+#hero {
+    display: block;
+    height: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+main.home h1 {
+
 }
