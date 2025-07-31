@@ -55,8 +55,8 @@
 
     .join {
         position: absolute;
-        top: 250px;
-        right: 200px;
+        top: 25%;
+        right: 15%;
         padding: 15px 40px;
         cursor: pointer;
         border-radius: 10px;
@@ -66,4 +66,13 @@
         text-decoration: none;
         font-size: 1.2rem;
     }
+
+    .sl-icon {
+        padding: 15px;
+    }
+
+    .sl-info {
+        line-height: 2;
+    }
+
 }

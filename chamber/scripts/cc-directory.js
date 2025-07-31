@@ -1,12 +1,3 @@
-// Hamburger menu
-const hamButton = document.querySelector('#hamButton');
-const navElement = document.querySelector('#animateme');
-
-hamButton.addEventListener('click', () => {
-    navElement.classList.toggle('open');
-    hamButton.classList.toggle('open');
-});
-
 // Getting data
 
 const url = 'https://lionel-alvarado16.github.io/wdd231/chamber/data/members.json';
@@ -43,6 +34,7 @@ const displayCompanies = (companies) => {
         website.setAttribute('target', '_blank');
         website.innerHTML = `${company.websiteurl}`;
 
+        card.classList.add("directory");
         card.appendChild(name);
         card.appendChild(logo);
         card.appendChild(address);
