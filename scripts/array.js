@@ -114,6 +114,10 @@ function createCourseCard(filteredCourses) {
         }
 
         document.querySelector('.courses-container').appendChild(box);
+
+        box.addEventListener("click", () => {
+            displayCourseDetails(course);
+        });
     });
 
     // Number of credits
@@ -123,4 +127,25 @@ function createCourseCard(filteredCourses) {
     credits.innerHTML = `The total credits for course listed above is ${filteredCourses.reduce((acc, course) => acc + course.credits, 0)}`;
     credits.classList.add('credits');
     document.querySelector('.courses-container').appendChild(credits);
+}
+
+// Modal
+const courseDetails = document.querySelector('#course-details');
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits:</strong> ${course.credits}</p>
+        <p><strong>Certificate:</strong> ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
 }
