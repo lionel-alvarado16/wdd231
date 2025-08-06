@@ -1,6 +1,5 @@
-//https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/
-
-temples = [
+export const url = "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/"
+export const temples = [
     {
         "number": "1",
         "name": "St. George Utah Temple",
@@ -210,6 +209,13 @@ temples = [
         "dedicated": "October, 1984",
         "person": "Gordon B. Hinckley",
         "path": "dallas-texas/400x250/dallas-temple-lds-1048888-wallpaper.jpg"
+    },
+    {
+        "number": "146",
+        "name": "Payson Utah Temple",
+        "dedicated": "June, 2015",
+        "person": "Henry B. Eyring",
+        "path": "payson-utah/320x200/payson-utah-temple-daylight-1416668-wallpaper.jpg"
     }
 ]
 
