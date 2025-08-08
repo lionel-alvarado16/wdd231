@@ -10,8 +10,8 @@ const sunrise = document.querySelector('#sunrise');
 const sunset = document.querySelector('#sunset');
 
 // Create required values for the URL
-const myLat = "-11.92";
-const myLong = "-77.05";
+const myLat = "-12.05";
+const myLong = "-77.04";
 
 // Consutruct a full path using template literals
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&units=metric&appid=2c6a2285ce9048f33ec9132f22845bda`;
