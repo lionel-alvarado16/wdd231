@@ -1,0 +1,44 @@
+{
+    "pointsOfInterest": [
+        {
+            "name": "Plaza De Armas de Lima",
+            "address": "Jirón de la Unión, Cercado de Lima, Lima 15001, Peru",
+            "description": "The historic heart of Lima, surrounded by the Government Palace, Cathedral, and Archbishop's Palace. A UNESCO World Heritage Site and the starting point for exploring the city's colonial past."
+        },
+        {
+            "name": "Museo Larco",
+            "address": "Av. Simón Bolívar 1515, Pueblo Libre, Lima 15084, Peru",
+            "description": "A world-renowned museum showcasing pre-Columbian art, pottery, and gold and silver treasures. Its beautiful 18th-century mansion and lush gardens offer a unique cultural experience."
+        },
+        {
+            "name": "Miraflores Malecón",
+            "address": "Malecón de la Reserva, Miraflores, Lima 15074, Peru",
+            "description": "A scenic clifftop promenade with breathtaking views of the Pacific Ocean, perfect for walking, cycling, or paragliding. Home to parks, sculptures, and romantic sunset spots."
+        },
+        {
+            "name": "Huaca Pucllana",
+            "address": "Calle General Borgoño cuadra 8, Miraflores, Lima 15074, Peru",
+            "description": "An ancient adobe pyramid built by the Lima culture around 500 AD. Offers guided tours and a renowned restaurant overlooking the archaeological site."
+        },
+        {
+            "name": "Parque Kennedy",
+            "address": "Av. Diagonal, Miraflores, Lima 15074, Peru",
+            "description": "A lively urban park surrounded by cafes, shops, and artisan markets. Known for its resident cats and frequent cultural events, it's a favorite gathering spot for locals and tourists."
+        },
+        {
+            "name": "Parque de la Reserva – Magic Water Circuit",
+            "address": "Jr. Madre de Dios S/N, Cercado de Lima, Lima 15046, Peru",
+            "description": "A dazzling nighttime attraction featuring a series of illuminated fountains with choreographed water, light, and music shows."
+        },
+        {
+            "name": "Barranco District",
+            "address": "Barranco, Lima 15063, Peru",
+            "description": "Lima’s bohemian neighborhood filled with colorful murals, art galleries, bars, and cafes. Home to the iconic Puente de los Suspiros and a vibrant nightlife scene."
+        },
+        {
+            "name": "Parque El Olivar",
+            "address": "Calle La Republica 455, San Isidro, Lima 15073, Peru",
+            "description": "A peaceful park filled with centuries-old olive trees, historic homes, and charming walking paths. A green oasis in the heart of the city."
+        }
+    ]
+}
