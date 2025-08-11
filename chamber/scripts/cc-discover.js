@@ -52,3 +52,23 @@ const displayItems = (items) => {
 }
 
 getItemData();
+
+// Using localStorage to store the last visit date by the client
+const visitMessage = document.getElementById('sidebar');
+const lastVisitString = localStorage.getItem('lastVisit');
+const lastVisit = Number(lastVisitString);
+const todayDate = Date.now();
+const msToDays = 86400000; // milliseconds to days constant = 1000 ms/s * 60 s/m * 60 m/h * 24 h/day
+
+if (!lastVisit) {
+    visitMessage.innerHTML = "Welcome! Let us know if you have any questions."
+} else {
+    const daysAfterLastVisit = Math.floor((todayDate - lastVisit) / msToDays);
+    if (daysAfterLastVisit < 1) {
+        visitMessage.innerHTML = "Back so soon! Awesome!";
+    } else {
+        visitMessage.innerHTML = `You last visited ${daysAfterLastVisit} ${daysAfterLastVisit === 1 ? "day" : "days"} ago.`;
+    }
+}
+
+localStorage.setItem('lastVisit', todayDate);

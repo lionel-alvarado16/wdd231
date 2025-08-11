@@ -121,6 +121,8 @@ main.directory {
 }
 
 main h1 {
+    font-family: "Encode Sans", sans-serif;
+    font-weight: 400;
     text-align: center;
     color: #003049;
 }
@@ -233,6 +235,8 @@ section img {
 }
 
 .home-title {
+    font-family: "Encode Sans", sans-serif;
+    font-weight: 400;
     text-align: left;
     padding: 10px 15px;
     margin: 0;
@@ -583,4 +587,9 @@ dialog button {
     cursor: pointer;
     margin: 1rem auto;
     grid-area: button;
+}
+
+#sidebar {
+    text-align: center;
+    font-size: 1.5rem;
 }
