@@ -1,0 +1,28 @@
+@media only screen and (min-width: 38rem) {
+    /* Discover Page Styles */
+    .cards div {
+        grid-template-areas: 
+        "picture name"
+        "picture address"
+        "picture description"
+        "picture button";
+        align-items: center;
+    }
+
+    .cards div figure img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+
+    .cards div figure img {
+        transition: transform 0.3s ease;
+        transform: scale(1); 
+        cursor: pointer;
+    }
+
+    .cards div figure img:hover {
+        transform: scale(1.05);
+    }
+
+}

@@ -126,7 +126,7 @@ main h1 {
 }
 
 section.directory {
-    background-color: #eee;
+    background-color: rgb(102, 155, 188, 0.1);
     padding: 20px;
     border: 1px solid rgb(102, 155, 188);
     box-shadow: 0 0 3px #999;
@@ -300,11 +300,13 @@ section img {
 }
 
 .spotl {
-    background-color: #eee;
+    background-color: rgb(102, 155, 188, 0.1);
     border-radius: 10px;
 }
 
 .spotl .company-name {
+    font-family: "Encode Sans", sans-serif;
+    font-weight: 400;
     border-bottom: 1px solid rgb(102, 155, 188);
     text-align: center;
     padding: 10px 0;
@@ -516,3 +518,69 @@ dialog button {
 }
 
 /* Discover Page Styles */
+.discover-page {
+    margin: 10px;
+}
+
+.cards div {
+    margin: 1rem 8px;
+    border: 1px solid #999;
+    background-color: rgb(102, 155, 188, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "picture"
+    "address"
+    "description"
+    "button";
+}
+
+.cards div h2 {
+    font-family: "Encode Sans", sans-serif;
+    font-weight: 400;
+    margin: 1rem 10px;
+    text-align: center;
+    color: #003049;
+    grid-area: name;
+}
+
+.cards div figure img {
+    width: 100%;
+    box-shadow: 0 0 .5rem #999;
+}
+
+.cards div figure {
+    grid-area: picture;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+.cards div address {
+    color: #003049;
+    margin: 1rem 10px;
+    grid-area: address;
+}
+
+.cards div p {
+    color: #003049;
+    margin: 1rem 10px;
+    grid-area: description;
+}
+
+.cards div button {
+    padding: .5rem 1rem;
+    background-color: #003049;
+    border: solid 1px #999;
+    color: #fff;
+    cursor: pointer;
+    margin: 1rem auto;
+    grid-area: button;
+}
