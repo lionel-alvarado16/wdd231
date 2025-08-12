@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmos Explorer - Lionel Alvarado</title>
+    <meta name="description" content="This website project is an opportunity to apply the concepts presented throughout the course. The Cosmos Explorer site is an educational site about the universe and space physics.">
+    <meta name="author" content="Lionel A. Alvarado">
+    <meta property="og:title" content="Cosmos Explorer Home Page - Lionel Alvarado">
+    <meta property="og:description" content="Visual presentation of the universe with a gallery of featured planets or events.">
+    <meta property="og:image" content="https://lionel-alvarado16.github.io/wdd231/chamber/images/chamber_of_commerce_1.png">
+    <meta property="og:url" content="https://lionel-alvarado16.github.io/wdd231/chamber/discover.html">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/ham-menu.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+</head>
+<body>
+    <div class="nav-box">
+        <header>
+            <img src="images/logo.png" alt="Comos Explorer Logo" width="210" height="70">
+            <div class="title-style">
+                <!-- <span>Cosmos Explorer</span> -->
+            </div>
+            <button id="hamButton"></button>
+        </header>
+        <nav id="animateme">
+            <ul class="menuLinks">
+                <li class="current-page"><a href="index.html" title="Home">Home</a></li>
+                <li><a href="planets.html" title="Explore">Explore</a></li>
+                <li><a href="events.html" title="Events">Events</a></li>
+                <li><a href="form.html" title="Register">Register</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main class="home-page">
+        <h1></h1>
+        <div id="item-cards" class="cards"></div>
+    </main>
+    <footer>
+        <div class="col1">
+            <p><b>Cosmos Explorer</b></p>
+            <p>WDD231 Final Project</p>
+            <a href="" target="_blank">Video</a>
+            <a href="" target="_blank">Sources</a>
+        </div>
+        <div class="social">
+            <a href="https://youtube.com" target="_blank">
+                <img src="images/youtube-logo.png" alt="youtube icon" loading="lazy">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter-logo.png" alt="twitter icon" loading="lazy">
+            </a>
+            <a href="https://instagram.com" target="blank">
+                <img src="images/instagram-logo.png" alt="instagram icon" loading="lazy">
+            </a>
+        </div>
+        <div class="col2">
+            <p><span id="currentyear"></span></p>
+            <p>Lionel Alvarado</p>
+            <p><span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
