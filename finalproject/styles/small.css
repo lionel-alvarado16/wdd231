@@ -180,6 +180,7 @@ footer p {
     border-radius: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 10px;
 }
 
 .img-cont {
@@ -190,16 +191,13 @@ footer p {
 .card-img {
     grid-column: 1/2;
     width: 90%;
-    padding: 10px;
     margin: 0;
     display: block;
 }
 
 .card-info {
     grid-column: 2/3;
-    padding: 15px 0;
     line-height: 1.5;
-    padding-right: .5rem;
 }
 
 .group {
