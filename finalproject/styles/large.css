@@ -63,4 +63,13 @@
         line-height: 1.5;
         margin-bottom: 0.5rem;
     }
+
+    #sl-planets, #sl-events {
+        margin-top: 0;
+        display: grid;
+        padding: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 1rem;
+        align-items: stretch;
+    }
 }

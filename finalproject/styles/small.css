@@ -199,6 +199,7 @@ footer p {
     grid-column: 2/3;
     padding: 15px 0;
     line-height: 1.5;
+    padding-right: .5rem;
 }
 
 .group {
