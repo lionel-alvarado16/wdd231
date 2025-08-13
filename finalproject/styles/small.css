@@ -111,6 +111,15 @@ footer p {
     text-decoration: none;
 }
 
+.video {
+    text-decoration: none;
+    color:#fff;
+}
+
+.video:hover {
+    color: #F8C46D;
+}
+
 /* Home Page Styles */
 #hero-img {
     width: 100%;
