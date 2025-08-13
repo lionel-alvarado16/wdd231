@@ -1,4 +1,4 @@
-[
+export const events = [
     {
         "name": "Total Solar Eclipse",
         "date": "2025-08-12",
