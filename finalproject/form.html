@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/ham-menu.js" defer></script>
-    <script src="scripts/home.js" defer></script>
+    <script src="scripts/form.js" type="module"></script>
 </head>
 <body>
     <div class="nav-box">
@@ -40,8 +40,24 @@
         </nav>
     </div>
     <main class="home-page">
-        <h1></h1>
-        <div id="item-cards" class="cards"></div>
+        <h1>Register Now!</h1>
+        <form method="get" action="thankyou.html" class="rpf">
+            <label>First Name <input type="text" name="fname" title="Your First Name" required autocomplete="given-name"></label>
+            <label>Last Name <input type="text" name="lname" title="Your Last Name" required autocomplete="family-name"></label>
+            <label>Email <input type="email" name="email" title="Your Email" required autocomplete="email" placeholder="someone@gmail.com"></label>
+            <label>Date of Birth <input type="date" name="birthdate" title="Your Date of Birth" required autocomplete="bday"></label>
+            <label>Cell Phone <input type="tel" name="phone" title="Your Mobile Phone Number" required autocomplete="tel"></label>
+            <label>Event's Name 
+                <select id="eventSelected" name="event" title="Select Your Event" required>
+                    <option value="" disabled selected>Select an Event ... &#9662;</option>
+                </select>
+            </label>
+                
+            <div>Comments or Questions </div>
+            <label><textarea id="org-description" name="description"></textarea></label>
+
+            <input type="submit" value="Register">
+        </form>
     </main>
     <footer>
         <div class="col1">
