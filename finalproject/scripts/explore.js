@@ -64,13 +64,15 @@ const displayPlanets = (planets) => {
         picture.setAttribute('height', '300');
         image.appendChild(picture);
 
+        button.classList.add("explore-button");
         button.innerHTML = "More Info";
 
+        card.classList.add("explore");
         card.appendChild(name);
+        card.appendChild(image);
         card.appendChild(type);
         card.appendChild(distanceFromSun);
         card.appendChild(diameter);
-        card.appendChild(image);
         card.appendChild(button);
 
         cards.appendChild(card);

@@ -14,7 +14,7 @@
     }
 
     ul.menuLinks li a {
-        color: #F8C46D;
+        color: #fff;
     }
 
     ul.menuLinks,
@@ -71,5 +71,14 @@
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         gap: 1rem;
         align-items: stretch;
+    }
+
+    .filters button {
+        transition: transform 0.3s ease;
+        transform: scale(1);
+    }
+
+    .filters button:hover {
+        transform: scale(1.1);
     }
 }

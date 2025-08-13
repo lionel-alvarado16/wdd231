@@ -60,7 +60,7 @@ ul.menuLinks {
 
 ul.menuLinks a:hover {
     background-color: #2C4BAB;
-    color: #fff;
+    color:#F8C46D;
     border-radius: 5px;
 }
 
@@ -123,14 +123,6 @@ footer p {
     margin: 0;
     padding-bottom: 0;
     line-height: normal;
-}
-
-.home-title {
-    font-family: "Encode Sans", sans-serif;
-    font-weight: 400;
-    text-align: left;
-    padding: 10px 15px;
-    margin: 0;
 }
 
 .content {
@@ -203,4 +195,80 @@ footer p {
 .group {
     display: grid;
     grid-template-columns: 1fr;
+}
+
+/* Explore Page Styles */
+.explore {
+    background-color:#192548;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+}
+
+.explore-page {
+    margin: 20px;
+}
+
+.explore-page h2 {
+    color: #F8C46D;
+    margin-bottom: 1rem;
+}
+
+#planet-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    place-items: center;
+}
+
+#planet-cards p {
+    margin-top: .5rem;
+}
+
+.explore figure {
+    margin-bottom: .5rem;
+}
+
+.explore-button {
+    margin: 1rem;
+    background-color: #2C4BAB;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.explore-button:hover {
+    color:#F8C46D;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 10px;
+    max-width: 80vh;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.filters button {
+    background-color:#2C4BAB;
+    color: white;
+    font-size: 1.20rem;
+    width: fit-content;
+    padding: 10px;
+    border-style: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    color:#F8C46D;
 }
