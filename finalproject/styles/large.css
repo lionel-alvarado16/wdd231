@@ -35,4 +35,32 @@
         justify-content: space-between;
         padding: 1rem 4rem;
     }
+
+    /* Home Page Styles */
+    .content .group-title {
+        text-align: left;
+        margin: 20px;
+    }
+
+    .group {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .content-btn {
+        justify-self: end;
+        align-self: center;
+        margin-right: 2rem;
+    }
+
+    .card-info {
+        grid-column: 2/3;
+        padding: 15px 0;
+        line-height: 2;
+    }
+
+    .card-info h2 {
+        line-height: 1.5;
+        margin-bottom: 0.5rem;
+    }
 }

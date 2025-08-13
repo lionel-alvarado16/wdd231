@@ -51,8 +51,7 @@ ul.menuLinks li a {
 }
 
 ul.menuLinks li.current-page a {
-    text-decoration: underline;
-    text-decoration-color: #669BBC;
+    color: #F8C46D;
 }
 
 ul.menuLinks {
@@ -62,7 +61,7 @@ ul.menuLinks {
 ul.menuLinks a:hover {
     background-color: #2C4BAB;
     color: #fff;
-    font-weight: 400;
+    border-radius: 5px;
 }
 
 nav {
@@ -82,6 +81,10 @@ nav.open {
 h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
+    color:#F8C46D;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
 }
 
 footer {
@@ -128,4 +131,77 @@ footer p {
     text-align: left;
     padding: 10px 15px;
     margin: 0;
+}
+
+.content {
+    margin: 10px;
+    padding: 10px;
+}
+
+.content .group-title {
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+
+.content h2 {
+    color:#F8C46D;
+}
+
+.content-btn {
+    display: block; 
+    width: 130px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color:#2C4BAB;
+    color: #fff;
+    text-decoration: none;
+    align-self: start;
+}
+
+.content-btn:hover {
+    color: #F8C46D;
+}
+
+#sl-planets, #sl-events {
+    margin-top: .5rem;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+    align-items: stretch;
+}
+
+.card {
+    background-color: #192548;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.img-cont {
+    display: flex;
+    align-items: center;
+}
+
+.card-img {
+    grid-column: 1/2;
+    width: 90%;
+    padding: 10px;
+    margin: 0;
+    display: block;
+}
+
+.card-info {
+    grid-column: 2/3;
+    padding: 15px 0;
+    line-height: 1.5;
+}
+
+.group {
+    display: grid;
+    grid-template-columns: 1fr;
 }

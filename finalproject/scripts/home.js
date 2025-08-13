@@ -32,6 +32,7 @@ const displayPlanets = (planets) => {
     planets.forEach((planet) => {
         // Create elemets to add to the div cards element
         let card = document.createElement('div');
+        let cardInfo = document.createElement('div');
         let name = document.createElement('h2');
         let type = document.createElement('p');
         let distanceFromSun = document.createElement('p');
@@ -44,18 +45,22 @@ const displayPlanets = (planets) => {
         distanceFromSun.innerHTML = `Distance from Sun: ${planet.distance_from_sun}`;
         diameter.innerHTML = `Diameter: ${planet.diameter}`;
 
+        cardInfo.classList.add("card-info");
+        cardInfo.appendChild(name);
+        cardInfo.appendChild(type);
+        cardInfo.appendChild(distanceFromSun);
+        cardInfo.appendChild(diameter);
+
         picture.setAttribute('src', planet.image);
         picture.setAttribute('alt', `Image of ${planet.name}`);
         picture.setAttribute('loading', 'lazy');
-        picture.setAttribute('width', '300');
-        picture.setAttribute('height', '300');
+        picture.classList.add("card-img");
         image.appendChild(picture);
+        image.classList.add("img-cont");
 
-        card.appendChild(name);
-        card.appendChild(type);
-        card.appendChild(distanceFromSun);
-        card.appendChild(diameter);
+        card.classList.add("card");
         card.appendChild(image);
+        card.appendChild(cardInfo);
 
         cards.appendChild(card);
     });
@@ -78,6 +83,7 @@ function displayEvents(data) {
     cards.innerHTML = '';
     data.forEach((event) => {
         let card = document.createElement('div');
+        let cardInfo = document.createElement('div');
         let name = document.createElement('h2');
         let date = document.createElement('p');
         let location = document.createElement('p');
@@ -88,17 +94,21 @@ function displayEvents(data) {
         date.innerHTML = `Date: ${event.date}`;
         location.innerHTML = `Location: ${event.location}`;
 
+        cardInfo.classList.add("card-info");
+        cardInfo.appendChild(name);
+        cardInfo.appendChild(date);
+        cardInfo.appendChild(location);
+
         picture.setAttribute('src', event.image);
         picture.setAttribute('alt', `Image of ${event.name}`);
         picture.setAttribute('loading', 'lazy');
-        picture.setAttribute('width', '300');
-        picture.setAttribute('height', '300');
+        picture.classList.add("card-img");
         image.appendChild(picture);
+        image.classList.add("img-cont");
 
-        card.appendChild(name);
-        card.appendChild(date);
-        card.appendChild(location);
+        card.classList.add("card");
         card.appendChild(image);
+        card.appendChild(cardInfo);
 
         eventCards.appendChild(card);
     });
