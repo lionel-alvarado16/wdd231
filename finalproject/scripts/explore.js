@@ -50,8 +50,6 @@ const displayPlanets = (planets) => {
         let diameter = document.createElement('p');
         let image = document.createElement('figure');
         let picture = document.createElement('img');
-        let address = document.createElement('address');
-        let description = document.createElement('p');
         let button = document.createElement('button');
 
         name.innerHTML = `${planet.name}`;
@@ -66,7 +64,6 @@ const displayPlanets = (planets) => {
         picture.setAttribute('height', '300');
         image.appendChild(picture);
 
-        description.innerHTML = `${planet.description}`;
         button.innerHTML = "More Info";
 
         card.appendChild(name);
@@ -74,7 +71,6 @@ const displayPlanets = (planets) => {
         card.appendChild(distanceFromSun);
         card.appendChild(diameter);
         card.appendChild(image);
-        card.appendChild(description);
         card.appendChild(button);
 
         cards.appendChild(card);
