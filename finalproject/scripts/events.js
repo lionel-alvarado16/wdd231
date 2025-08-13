@@ -25,12 +25,14 @@ function displayEvents(data) {
         picture.setAttribute('height', '300');
         image.appendChild(picture);
 
+        button.classList.add('events-button');
         button.innerHTML = "Details";
 
+        card.classList.add('events');
         card.appendChild(name);
+        card.appendChild(image);
         card.appendChild(date);
         card.appendChild(location);
-        card.appendChild(image);
         card.appendChild(button);
 
         cards.appendChild(card);
@@ -44,19 +46,15 @@ function displayEvents(data) {
 displayEvents(events);
 
 // Modal
-const eventDesc = document.querySelector('#event-desc');
+// GET A REFERENCE TO THE HTML DIALOG ELEMENT
+const myDialog = document.querySelector("#mydialog");
+const myTitle = document.querySelector("#mydialog h2");
+const myClose = document.querySelector("#mydialog button");
+const myInfo = document.querySelector("#mydialog p");
+myClose.addEventListener("click", () => myDialog.close());
 
 function displayEventDesc(event) {
-    eventDesc.innerHTML = '';
-    eventDesc.innerHTML = `
-        <button id="closeModal">❌</button>
-        <h2>${event.name}</h2>
-        <p><strong>Brief Description:</strong> ${event.description}</p>
-    `;
-
-    eventDesc.showModal();
-
-    closeModal.addEventListener('click', () => {
-        eventDesc.close();
-    });
+    myTitle.innerHTML = event.name;
+    myInfo.innerHTML = `<strong>Brief Description:</strong> ${event.description}`;
+    myDialog.showModal();
 }

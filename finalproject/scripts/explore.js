@@ -86,19 +86,16 @@ const displayPlanets = (planets) => {
 getPlanetData();
 
 // Modal
-const planetDesc = document.querySelector('#planet-desc');
+
+// GET A REFERENCE TO THE HTML DIALOG ELEMENT
+const myDialog = document.querySelector("#mydialog");
+const myTitle = document.querySelector("#mydialog h2");
+const myClose = document.querySelector("#mydialog button");
+const myInfo = document.querySelector("#mydialog p");
+myClose.addEventListener("click", () => myDialog.close());
 
 function displayPlanetDesc(planet) {
-    planetDesc.innerHTML = '';
-    planetDesc.innerHTML = `
-        <button id="closeModal">❌</button>
-        <h2>${planet.name}</h2>
-        <p><strong>Brief Description:</strong> ${planet.description}</p>
-    `;
-
-    planetDesc.showModal();
-
-    closeModal.addEventListener('click', () => {
-        planetDesc.close();
-    });
+    myTitle.innerHTML = planet.name;
+    myInfo.innerHTML = `<strong>Brief Description:</strong> ${planet.description}`;
+    myDialog.showModal();
 }

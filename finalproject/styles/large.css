@@ -81,4 +81,8 @@
     .filters button:hover {
         transform: scale(1.1);
     }
+
+    #mydialog {
+        width: 60%;
+    }
 }

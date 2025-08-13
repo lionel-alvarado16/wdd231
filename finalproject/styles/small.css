@@ -198,7 +198,7 @@ footer p {
 }
 
 /* Explore Page Styles */
-.explore {
+.explore, .events {
     background-color:#192548;
     border-radius: 10px;
     padding: 20px;
@@ -206,34 +206,33 @@ footer p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 450px;
 }
 
-.explore-page {
+.explore-page, .events-page {
     margin: 20px;
 }
 
-.explore-page h2 {
+.explore-page h2, .events-page h2 {
     color: #F8C46D;
     margin-bottom: 1rem;
 }
 
-#planet-cards {
+#planet-cards, #event-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
-    place-items: center;
 }
 
-#planet-cards p {
+#planet-cards p, #event-cards p {
     margin-top: .5rem;
 }
 
-.explore figure {
+.explore figure, .events figure {
     margin-bottom: .5rem;
+    box-shadow: 0 0 1rem #2C4BAB;
 }
 
-.explore-button {
+.explore-button, .events-button {
     margin: 1rem;
     background-color: #2C4BAB;
     color: #fff;
@@ -271,4 +270,46 @@ footer p {
 
 .filters button:hover {
     color:#F8C46D;
+}
+
+/* Modal */
+
+#mydialog {
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 0 3rem #F8C46D;
+    width: 90%;
+    background-color: #0D0D1A;
+}
+
+#mydialog div {
+    display: grid;
+    grid-template-columns: auto 44px;
+    background-color:#0D0D1A;
+    padding: 5px;
+    border-bottom: #aaa 1px solid;
+}
+
+#mydialog h2 {
+    margin: 0;
+    color:#F8C46D;
+    padding-left: 10px;
+}
+
+#mydialog button {
+    margin: 0;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    box-shadow: 0 0 10px #2C4BAB;
+}
+
+#mydialog p {
+    padding: 15px;
+    color: #fff;
+    line-height: 1.5;
+}
+
+::backdrop {
+    background-color: rgba(25, 37, 72, 0.75);
 }
