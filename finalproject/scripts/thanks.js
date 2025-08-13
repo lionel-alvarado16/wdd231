@@ -1,5 +1,4 @@
 const myInfo = new URLSearchParams(window.location.search);
-console.log(myInfo);
 
 document.querySelector('#results').innerHTML = `
 <h2>Membership Details</h2>

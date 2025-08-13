@@ -6,7 +6,6 @@ async function getPlanetData() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            // console.log(data); // testing only
             allPlanetsData = data.planets;
             displayPlanets(allPlanetsData);
         } else {

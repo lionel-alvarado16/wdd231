@@ -9,7 +9,6 @@ async function getPlanetData() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            // console.log(data); // testing only
             const planetsData = data.planets;
             displayPlanets(randomPlanets(planetsData));
         } else {
