@@ -15,7 +15,10 @@ async function getPlanetData() {
             throw Error(await response.text());
         }
     } catch (error) {
-        console.log(error);
+        const errorContainer = document.querySelector('#error-message');
+        if (errorContainer) {
+            errorContainer.textContent = "Unable to load planet data. Please try again later.";
+        }
     }
 }
 
