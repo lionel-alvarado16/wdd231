@@ -85,4 +85,13 @@
     #mydialog {
         width: 60%;
     }
+
+    .rpf {
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: #192548;
+        padding: 2rem;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+    }
 }

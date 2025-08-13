@@ -313,3 +313,73 @@ footer p {
 ::backdrop {
     background-color: rgba(25, 37, 72, 0.75);
 }
+
+/* Form Page Styles */
+.rpf {
+    padding: 10px 15px;
+}
+
+.rpf label:not(:has(textarea)) {
+    display: block;
+    padding-top: 1rem;
+}
+
+.rpf input[type="text"],
+.rpf input[type="email"],
+.rpf input[type="tel"],
+.rpf input[type="date"], 
+select {
+    display: block;
+    border: solid 1px #999;
+    padding: .5rem;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    margin-top: .25rem;
+    background-color: #192548;
+    color: #fff;
+}
+
+.rpf input[type="email"]::placeholder {
+    color: #fff;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+select {
+    margin-bottom: 1rem;
+}
+
+textarea {
+    height: 100px;
+    width: 100%;
+    max-width: 400px;
+    padding: .5rem;
+    border: solid 1px #999;
+    resize: vertical;
+    /* transition: border-color 0.3s; */
+    margin-top: .25rem;
+    appearance: none;
+    background-color: #192548;
+    color: #fff;
+}
+
+.rpf input[type="submit"] {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    background-color:#2C4BAB;
+    color: #fff;
+    padding: .6rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 2rem 0 .5rem 0;
+    font-weight: bolder;
+}
+
+.rpf input[type="submit"]:hover {
+    color: #F8C46D;
+    cursor: pointer;
+}
