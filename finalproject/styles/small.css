@@ -383,3 +383,14 @@ textarea {
     color: #F8C46D;
     cursor: pointer;
 }
+
+#results {
+    line-height: 2;
+    text-align: center;
+    background-color: #192548;
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 20px;
+    margin-bottom: 1.5rem;
+}
