@@ -251,7 +251,7 @@ footer p {
     border: none;
 }
 
-.explore-button:hover {
+.explore-button:hover, .events-button:hover {
     color:#F8C46D;
 }
 
@@ -279,6 +279,10 @@ footer p {
 
 .filters button:hover {
     color:#F8C46D;
+}
+
+#event-cards {
+    margin-bottom: 2rem;
 }
 
 /* Modal */
@@ -401,4 +405,79 @@ textarea {
     max-width: 500px;
     padding: 20px;
     margin-bottom: 1.5rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #2C4BAB, #F8C46D);
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 20px auto;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cta-btn:hover {
+    background: linear-gradient(135deg, #F8C46D, #2C4BAB);
+    transform: translateX(-50%) scale(1.05);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#hero-box {
+    position: relative;
+}
+
+.cta-btn-home {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #2C4BAB, #F8C46D);
+    color: white;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    opacity: 0.95;
+    text-align: center;
+    max-width: 90%;
+    white-space: normal;
+    line-height: 1.3;
+}
+
+.cta-btn-home:hover {
+    transform: translateX(-50%) scale(1.05);
+    background: linear-gradient(135deg, #F8C46D, #2C4BAB);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    opacity: 1;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translate(-50%, 20px);
+    }
+
+    to {
+        opacity: 0.95;
+        transform: translate(-50%, 0);
+    }
+}
+
+.cta-btn-home {
+    animation: fadeUp 1.2s ease-out forwards;
+    animation-delay: 0.5s;
 }

@@ -94,4 +94,10 @@
         border-radius: 10px;
         margin-bottom: 2rem;
     }
+
+    .cta-btn-home {
+        font-size: 1.1rem;
+        padding: 12px 28px;
+        max-width: none;
+    }
 }
