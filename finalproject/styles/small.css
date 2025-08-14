@@ -450,7 +450,6 @@ html {
     text-decoration: none;
     border-radius: 30px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
     opacity: 0.95;
     text-align: center;
     max-width: 90%;
@@ -459,25 +458,19 @@ html {
 }
 
 .cta-btn-home:hover {
-    transform: translateX(-50%) scale(1.05);
     background: linear-gradient(135deg, #F8C46D, #2C4BAB);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
     opacity: 1;
 }
 
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translate(-50%, 20px);
-    }
-
-    to {
-        opacity: 0.95;
-        transform: translate(-50%, 0);
-    }
-}
-
-.cta-btn-home {
-    animation: fadeUp 1.2s ease-out forwards;
-    animation-delay: 0.5s;
+.visit-message {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 15px;
+    opacity: 1;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }

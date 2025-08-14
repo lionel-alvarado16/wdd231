@@ -119,3 +119,23 @@ function displayEvents(data) {
 // Get and display only the next 3 events
 const nextThreeEvents = getNextThreeEvents(events);
 displayEvents(nextThreeEvents);
+
+
+const visitMessage = document.getElementById('visit-message');
+const lastVisit = localStorage.getItem('lastVisit');
+const today = Date.now();
+const msToDays = 86400000;
+
+if (lastVisit) {
+    const daysAgo = Math.floor((today - lastVisit) / msToDays);
+    if (daysAgo === 0) {
+        visitMessage.textContent = "Welcome back, explorer! You're visiting again today 🚀";
+    } else {
+        visitMessage.textContent = `Welcome back, explorer! Your last visit was ${daysAgo} day${daysAgo > 1 ? 's' : ''} ago 🌌`;
+    }
+} else {
+    visitMessage.textContent = "Welcome to your first mission in Cosmos Explorer! 🌠";
+}
+
+// Save today's date as the last visit
+localStorage.setItem('lastVisit', today);
